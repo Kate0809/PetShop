@@ -244,7 +244,7 @@ body {
 .popup {
   position: absolute;
   background: url(../img/Paw_.png) center top no-repeat #dbe9eb;
-  width: 320px;
+  width: 400px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -989,6 +989,10 @@ body {
     margin-bottom: 15px;
   }
 
+  .discount-system__btn {
+    width: 180px;
+  }
+
   .blog .post__title {
     margin-bottom: 15px;
     font-size: 18px;
@@ -1116,6 +1120,10 @@ body {
     font-size: 24px;
   }
 
+  .popup {
+    width: 360px;
+  }
+
   .banner__content {
     padding-left: 100px;
   }
@@ -1186,7 +1194,7 @@ body {
   }
 
   .discount-system__btn {
-    width: 180px;
+    width: 200px;
     margin: 0 auto;
   }
 
@@ -1338,6 +1346,10 @@ body {
 
   .header__logo {
     width: 35%;
+  }
+
+  .popup {
+    width: 320px;
   }
 
   .banner__content {
