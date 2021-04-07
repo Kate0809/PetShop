@@ -808,6 +808,35 @@ body {
   color: #4c75a3;
 }
 
+/*---BLOG-PAGE---*/
+
+.blog-page__title {
+  margin-bottom: 35px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #0b375c;
+}
+
+.blog-page__text {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.blog-page__bold-text {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: justify;
+  color: #f9955e;
+}
+
+.blog-page__img {
+  width: 50%;
+  float: left;
+  margin: 0 20px 5px 0;
+}
+
 .footer__content {
   display: flex;
   align-items: center;
@@ -1313,6 +1342,16 @@ body {
   .registration-form__text {
     font-size: 14px;
     margin: 0 auto 20px;
+  }
+
+  .blog-page__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .blog-page__text {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
   .footer__content {
