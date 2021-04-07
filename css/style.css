@@ -244,7 +244,7 @@ body {
 .popup {
   position: absolute;
   background: url(../img/Paw_.png) center top no-repeat #dbe9eb;
-  width: 400px;
+  width: 320px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -310,6 +310,8 @@ body {
 }
 
 .registration-link {
+  display: block;
+  margin-top: 5px;
   color: #f9955e;
   font-weight: 500;
   text-align: center;
