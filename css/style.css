@@ -1371,6 +1371,12 @@ body {
   }
 }
 
+@media (max-width: 950px) and (max-width: 700px) {
+  .nav__bar {
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 700px) {
   .container {
     max-width: 320px;
