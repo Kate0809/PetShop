@@ -779,8 +779,12 @@ body {
   background: url(../img/icon.png) center/contain no-repeat;
 }
 
-.registration__img {
+.registration__img-container {
   width: 25%;
+}
+
+.registration__img {
+  width: 100%;
 }
 
 .registration-form__text {
@@ -1514,7 +1518,7 @@ body {
     text-align: center;
   }
 
-  .registration__img {
+  .registration__img-container {
     width: 50%;
     margin-bottom: 15px;
   }
