@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/1be1ebd693.js" crossorigin="anonymous"></script>
+  <title>PetShop</title>
+</head>
+<body>
+<header class="header" id="header">
+  <div class="header__content">
+    <div class="header__logo-container">
+        <a href="index.html"><img src="img/logo/logo.png" alt="PetSHOP logo" class="header__logo"></a>
+    </div>
+    <div class="nav__icon">
+      <span></span>
+    </div>
+    <div class="nav__bar">
+      <nav class="nav__body">
+        <ul class="header__nav-list">
+          <li><a href="food.html" class="header__nav-link">Корма</a></li>
+          <li><a href="vitamins.html" class="header__nav-link">Витамины</a></li>
+          <li><a href="bowls.html" class="header__nav-link">Посуда</a></li>
+          <li><a href="toys.html" class="header__nav-link">Игрушки</a></li>
+          <li><a href="#contact" class="header__nav-link scroll-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <a href="#" class="user-link header__nav-link open-popup">
+          <i class="user-profile__icon fas fa-user"><span class="user-link__text">Войти</span></i>
+        </a>
+        <div class="popup-bg">
+            <div class="popup">
+              <a href="#" class="close-popup">X</a>
+              <h2 class="popup__title">Авторизация</h2>
+              <form class="popup__form">
+                <input type="text" class="form__input" placeholder="Телефон или эл.почта">
+                <input type="password" class="form__input" placeholder="Пароль">
+                <input type="submit" class="btn form__btn" value="Войти">
+              </form>
+              <span class="form__text"> Я новый покупатель. <a href="registration.html" class="registration-link">Зарегистрироваться</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>   <section class="about-food section blue-section">
+    <div class="about-food__content container">
+      <p class="about-food__text text">В каталоге PetShop представлены корма от торговых марок с мировыми именами, что служит дополнительной гарантией безупречного качества и безопасности зоопродукции.</p>
+      <p class="about-food__text text"> К заказу доступен сухой и влажный корм различных категорий и питательности. С их помощью можно составить максимально полезный рацион, а также полностью контролировать вес животного.</p>
+      <div class="about-food__buttons">
+        <a href="#dry-food" class="about-food__btn btn">Сухие корма</a>
+        <a href="#wet-food" class="about-food__btn btn">Влажные корма</a>
+        <a href="#delicacies" class="about-food__btn btn">Лакомства</a>
+    </div>
+  </div>
+  </section>
+  <section class="dry-food section azure-section" id="dry-food">
+    <div class="store__content container">
+        <h2 class="section-title">Сухие корма</h2>
+        <div class="store__nav">
+            <ul class="store__nav-body">
+              <li><a href="#puppie-food" class="store__nav-link" href="">Для щенков</a></li>
+              <li><a href="#adult-food" class="store__nav-link" href="">Для взрослых собак</a></li>
+              <li><a href="#senior-food" class="store__nav-link" href="">Для пожилых собак</a></li>
+            </ul>
+        </div>
+        <div class="store-section" id="puppie-food">
+          <h3 class="store-section__title">Корма для щенков</h3>
+          <p class="store-section__text text">Сухой корм для щенков, в отличие от корма для взрослых собак, должен отличаться большим количеством калорий,необходимо немного дополнительного белка, жира, кальция и фосфора. Важно обеспечить вашего щенка высококачественным кормом, чтобы помочь ему прожить долгой и здоровой жизнью. В данном разделе нашего интернет-магазина находится корм для щенков премиум и супер-премиум класса от самых лучших производителей кормов!</p>
+          <div class="store-section__content">
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/1.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Puppy</a>
+                  <p class="store__item-text text">Для щенков до 4 месяцев</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/2.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">NP Junior All Breeds</a>
+                  <p class="store__item-text text">Для щенков всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/3.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">NP Mini Junior Small Breeds</a>
+                  <p class="store__item-text text">Для щенков малых пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/4.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Maxi
+                    Junior</a>
+                  <p class="store__item-text text">Для щенков крупных пород</p>
+                </div>
+          </div>
+        </div>
+        <div class="store-section" id="adult-food">
+          <h3 class="store-section__title">Корма для взрослых собак</h3>
+          <p class="store-section__text text">Взрослым собакам требуются питательные вещества для удовлетворения их энергетических потребностей и для поддержания и восстановления тканей организма.Корм, который находится в данном разделе нашего интернет-магазина, был специально разработан для поддержания здорового состояния и удовлетворения потребности в пище собак от 1 года и до 6 лет.</p>
+          <div class="store-section__content">
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/5.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Adult Menue</a>
+                  <p class="store__item-text text">Для взрослых собак всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/6.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">NP Adult All Breeds</a>
+                  <p class="store__item-text text">Для взрослых собак всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/8.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Adult</a>
+                  <p class="store__item-text text">Для взрослых собак всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/7.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">NP Superior Care Sensitive</a>
+                  <p class="store__item-text text">Для взрослых собак всех пород</p>
+                </div>
+          </div>
+        </div>
+        <div class="store-section" id="senior-food">
+          <h3 class="store-section__title">Корма для пожилых собак</h3>
+          <p class="store-section__text text">С возрастом пищеварение у собак начинает меняться, и их иммунная система начинает нуждаться в дополнительной поддержке. Сухой корм, который представлен в данном разделе нашего интернет-магазина, имеет более низкий уровень калорий и тщательно подобранный баланс питательных веществ, чтобы поддерживать стареющие суставы и иммунную систему Вашей собаки.</p>
+          <div class="store-section__content">
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/9.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Senior</a>
+                  <p class="store__item-text text">Для пожилых собак
+                    всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/10.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Mini Senior</a>
+                  <p class="store__item-text text">Для пожилых собак мелких пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/11.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Maxi Senior</a>
+                  <p class="store__item-text text">Для пожилых собак крупных пород</p>
+                </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="wet-food section blue-section" id="wet-food">
+    <div class="store__content container">
+        <h2 class="section-title">Влажные корма</h2>
+        <div class="store-section">
+          <p class="store-section__text text">Влажные корма для собак отличаются от других высоким содержанием в своем составе клетчатки. Ведь не секрет, что именно клетчатка играет не последнюю роль в процессе пищеварения и при ее достаточном количестве, она нормализует и упрощает его, предотвращая таким образом, развитие многих болезней желудка</p>
+          <div class="store-section__content">
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/12.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Soft</a>
+                  <p class="store__item-text text">Для взрослых собак всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/13.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Soft</a>
+                  <p class="store__item-text text">Для взрослых собак всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/14.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Soft Senior</a>
+                  <p class="store__item-text text">Для пожилых собак всех пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/15.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Soft Mini</a>
+                  <p class="store__item-text text">Для взрослых собак мелких пород</p>
+                </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="delicacies section azure-section" id="delicacies">
+    <div class="store__content container">
+        <h2 class="section-title">Лакомства</h2>
+        <div class="store-section">
+          <p class="store-section__text text">Специалисты рекомендуют не обходить вниманием сбалансированные и полезные витамины и лакомства для собак, которые можно использовать в различных целях. </p>
+          <div class="store-section__content">
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/16.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Fruitees</a>
+                  <p class="store__item-text text">Нормализует пищеварение</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/17.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Bosch Fruitees</a>
+                  <p class="store__item-text text">Улучшает работу сердца</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/19.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">CLAN FAMILY</a>
+                  <p class="store__item-text text">Для собак мелких пород</p>
+                </div>
+                <div class="store__item">
+                  <div class="store__img-container">
+                    <img src="img/18.png" alt="Игрушка для собак" class="store__img"></div>
+                  <a href="#" class="store__item-title">Деревенские лакомства</a>
+                  <p class="store__item-text text">Для взрослых собак крупных пород</p>
+                </div>
+          </div>
+        </div>
+    </div>
+  </section>
+<footer class="footer blue-section" id="contact">
+  <div class="footer__content container">
+    <div class="footer__item">
+      <a href="#header"><img src="img/logo/logo.png" alt="Logo" class="footer__logo"></a>
+      <p class="footer__text worktime-text text">Мы работаем для Вас каждый день с 10:00 до 19:00</p>
+      <div class="socials">
+        <a href="#" class="social__link"><i class="social__icon fab fa-facebook-f"></i></a>
+        <a href="#" class="social__link"><i class="social__icon fab fa-twitter"></i></a>
+        <a href="#" class="social__link"><i class="social__icon fab fa-instagram"></i></a>
+        <a href="#" class="social__link"><i class="social__icon fab fa-vk"></i></a>
+      </div>
+    </div>
+    <div class="footer__item">
+      <img src="img/Dog.png" alt="Dog" class="footer__img">
+    </div>
+    <div class="footer__item">
+      <div class="footer__info">
+        <i class="footer__icon fas fa-map-marker-alt"></i>
+        <p class="footer__text text">г. Минск, ул. Тимирязева 12/4</p>
+      </div>
+      <div class="footer__info">
+        <i class="footer__icon fas fa-mobile-alt"></i>
+        <a href="tel:+375291111111" class="footer__text text">+375 29 1111111</a>
+      </div>
+      <div class="footer__info">
+        <i class="footer__icon far fa-envelope"></i>
+        <a href="mailto:petshop@gmail.com" class="footer__text text">petshop@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyrigth">
+    <p class="copyright__text text">© 2017-2021 petshop.com. Все права защищены.</p>
+  </div>
+</footer>    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

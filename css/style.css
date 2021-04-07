@@ -1,0 +1,1571 @@
+@charset "UTF-8";
+
+/*-------------Обнуление--------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-------------Общие стили--------------*/
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #585857;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.blue-section {
+  background-color: #dbe9eb;
+}
+
+.azure-section {
+  background-color: #eaf6ff;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  margin-bottom: 60px;
+  font-family: "Nunito", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #f9955e;
+  text-align: center;
+}
+
+.text {
+  line-height: 22px;
+}
+
+/*-------------------------------------*/
+
+.header {
+  padding: 12px 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-container {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 70%;
+}
+
+.header__nav-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-list li {
+  margin: 0 5px;
+}
+
+.header__nav-link {
+  padding: 5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #f9955e;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.header__nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(249, 149, 94, 0.7);
+  transition: all 0.5s ease-in;
+}
+
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__bar.active {
+  top: 0;
+}
+
+.nav__body {
+  margin-right: 20px;
+}
+
+.nav__body.active {
+  top: 0;
+}
+
+.nav__icon {
+  display: none;
+}
+
+.nav__icon span {
+  position: absolute;
+  background-color: #f9955e;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 9px;
+  transition: all 0.5s ease 0s;
+}
+
+.user-profile {
+  margin-left: 20px;
+}
+
+.user-profile__icon {
+  font-size: 14px;
+  color: #f9955e;
+}
+
+.user-link:hover .user-link__text,
+.user-link:hover .user-profile__icon {
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.user-link__text {
+  margin-left: 7px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  background: url(../img/Paw_.png) center top no-repeat #dbe9eb;
+  width: 380px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  padding-top: 60px;
+}
+
+.popup__title {
+  margin-bottom: 40px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b385c;
+  text-align: center;
+}
+
+.popup__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #0b385c;
+}
+
+.form__input {
+  width: 70%;
+  height: 35px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  border: 2px solid rgba(11, 56, 92, 0.7);
+  border-radius: 10px;
+}
+
+.form__input::placeholder {
+  color: #585857;
+  font-style: italic;
+}
+
+.form__btn {
+  margin: 30px 0;
+  padding: 5px 0;
+  border: 2px solid transparent;
+}
+
+.form__btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #f9955e;
+  color: #f9955e;
+  transition: all 0.5s;
+}
+
+.form__text {
+  display: block;
+  margin: 0 auto;
+}
+
+.registration-link {
+  color: #f9955e;
+  font-weight: 500;
+  text-align: center;
+}
+
+.registration-link:hover {
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+/*---BANNER---*/
+
+.banner {
+  padding-top: 50px;
+}
+
+.banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 200px;
+}
+
+.banner__info {
+  width: 55%;
+}
+
+.banner__title {
+  margin-bottom: 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0b385c;
+}
+
+.banner__title_big {
+  display: block;
+  margin-bottom: 30px;
+  font-family: "Nunito", sans-serif;
+  color: #f9955e;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.banner__text {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  line-height: 23px;
+}
+
+.banner__img {
+  width: 35%;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  padding: 10px 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 15px;
+  background-color: #f9955e;
+  text-align: center;
+}
+
+/*-----ABOUT-----*/
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item {
+  width: 20%;
+  text-align: center;
+}
+
+.about__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  box-shadow: inset 0 4px 46px rgba(3, 3, 3, 0.06);
+  background-color: rgba(197, 219, 237, 0.4);
+  border-radius: 50%;
+}
+
+.about__item-title {
+  margin-bottom: 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0b385c;
+}
+
+.icon {
+  font-size: 30px;
+  color: #f6935d;
+}
+
+/*---DISCOUNT-SYSTEM---*/
+
+.discount-system {
+  background: url(../img/bg1.jpg) center/cover no-repeat;
+}
+
+.discount-system__content {
+  max-width: 500px;
+}
+
+.discount-system__text {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.discount-system__title {
+  margin-bottom: 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0b385c;
+}
+
+.discount-system__item {
+  display: block;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.discount-system__item-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f9955e;
+}
+
+.discount-system__btn {
+  width: 200px;
+}
+
+/*---BLOG---*/
+
+.blog__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog__img {
+  width: 35%;
+  border: 10px solid #f9955e;
+  border-radius: 50%;
+  margin-right: 45px;
+}
+
+.blog__img__posts {
+  width: 50%;
+}
+
+.blog .post {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.blog .post:last-child {
+  margin-bottom: 0;
+}
+
+.blog .post__img {
+  width: 20%;
+}
+
+.blog .post__info {
+  width: 75%;
+  text-align: justify;
+}
+
+.blog .post__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b385c;
+}
+
+.blog .post__title:hover {
+  color: #f9955e;
+  transition: all 0.5s;
+}
+
+.blog .post__date {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/*-------FOOD-------*/
+
+.about-food {
+  background: url(../img/bg2.png) center/cover no-repeat;
+}
+
+.about-food__text {
+  max-width: 590px;
+  margin-bottom: 20px;
+  color: #0b375c;
+}
+
+.about-food__buttons {
+  max-width: 250px;
+}
+
+.about-food__btn {
+  margin-bottom: 15px;
+}
+
+.about-food__btn:last-child {
+  margin-bottom: 0;
+}
+
+.store__nav-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.store__nav-link {
+  display: block;
+  padding: 10px 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b375c;
+  background-color: rgba(88, 88, 87, 0.3);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.store__item {
+  width: 23%;
+  text-align: center;
+}
+
+.store__bottom-item {
+  margin-top: 30px;
+}
+
+.store__img-container {
+  width: 85%;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.store__img {
+  height: 170px;
+}
+
+.store__item-title {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #186cb1;
+}
+
+.store__item-title:hover {
+  color: #0b385c;
+  transition: all 0.5s;
+}
+
+.store-section {
+  margin-bottom: 60px;
+}
+
+.store-section__title {
+  margin-bottom: 45px;
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #f9955e;
+  text-align: center;
+}
+
+.store-section__title::before,
+.store-section__title::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 20px 3px;
+  background-color: #f9955e;
+  border-radius: 50%;
+}
+
+.store-section__text {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.store-section__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*------VITAMINS------*/
+
+.about-vitamins {
+  padding-top: 90px;
+  background: url(../img/Slice_1.png) center/contain no-repeat;
+  background-color: #dbe9eb;
+}
+
+.about-vitamins__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about-vitamins__img {
+  width: 30%;
+}
+
+.about-vitamins__info {
+  width: 60%;
+  padding-right: 15%;
+  padding-bottom: 60px;
+  align-self: center;
+}
+
+.about-vitamins__text {
+  margin-bottom: 20px;
+  color: #0b375c;
+  text-align: justify;
+}
+
+/*------BOWLS------*/
+
+.about-bowls {
+  background: url(../img/bg3.png) center/cover no-repeat;
+}
+
+.about-bowls__text {
+  max-width: 600px;
+  margin-bottom: 20px;
+  color: #0b375c;
+  text-align: justify;
+}
+
+/*------TOYS------*/
+
+.about-toys__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-toys__img {
+  width: 35%;
+}
+
+.about-toys__info {
+  width: 60%;
+}
+
+.about-toys__text {
+  margin-bottom: 20px;
+  color: #0b375c;
+  text-align: justify;
+}
+
+/*-----REGISTRATION---*/
+
+.registration__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.registration__form {
+  width: 30%;
+}
+
+.registration__btn {
+  display: block;
+  padding: 13px 0;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(77, 85, 194, 0.7);
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+
+.registration__btn:hover {
+  border: 2px solid #f9955e;
+  transition: all 0.5s;
+}
+
+.registration__social {
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registration__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #a8a8a3;
+  border-radius: 10px;
+}
+
+.registration__social-link:hover {
+  box-shadow: 2px 2px 2px #f9955e;
+  transition: all 0.5s;
+}
+
+.registration__social-icon {
+  font-size: 18px;
+}
+
+.registration__info {
+  width: 28%;
+}
+
+.registration__info-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f9955e;
+}
+
+.registration__info-text {
+  margin-bottom: 7px;
+}
+
+.registration__info-text::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  background: url(/img/icon.png) center/contain no-repeat;
+}
+
+.registration__img {
+  width: 25%;
+}
+
+.registration-form__text {
+  display: block;
+  margin: 0 auto 25px;
+  text-align: center;
+}
+
+.fa-facebook-f {
+  color: #3b5999;
+}
+
+.fa-google {
+  color: #dd4b39;
+}
+
+.fa-vk {
+  color: #4c75a3;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 40px 0;
+}
+
+.footer__item {
+  width: 30%;
+}
+
+.footer__logo {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  color: #585857;
+  text-align: center;
+}
+
+.footer__img {
+  width: 65%;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer__info:last-child {
+  margin-bottom: 0;
+}
+
+.footer__icon {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #f9955e;
+}
+
+.worktime-text {
+  max-width: 260px;
+}
+
+.socials {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f9955e;
+  border-radius: 50%;
+}
+
+.social__link:hover {
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+
+.social__link:hover .social__icon {
+  color: #f9955e;
+  transition: all 0.5s;
+}
+
+.social__icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.copyrigth {
+  padding: 10px 0;
+  background-color: #c5dbed;
+}
+
+.copyright__text {
+  text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .about-vitamins {
+    padding-top: 70px;
+  }
+
+  .about-vitamins__img {
+    width: 38%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 920px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+
+  .header {
+    padding: 12px 150px;
+  }
+
+  .header__logo {
+    width: 55%;
+  }
+
+  .header__nav-link {
+    font-size: 14px;
+  }
+
+  .banner__content {
+    padding-left: 150px;
+  }
+
+  .banner__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .banner__title_big {
+    font-size: 75px;
+  }
+
+  .banner__text {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 130px;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  .about__content {
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+
+  .about__item-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about__item-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .icon {
+    font-size: 26px;
+  }
+
+  .discount-system__content {
+    max-width: 450px;
+  }
+
+  .discount-system__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .discount-system__item {
+    margin-bottom: 15px;
+  }
+
+  .blog .post__title {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .about-food__text {
+    max-width: 390px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    max-width: 670px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .header {
+    padding: 10px 100px;
+  }
+
+  .header__logo-container {
+    width: 85%;
+  }
+
+  .header__logo {
+    width: 30%;
+  }
+
+  .header__nav-list {
+    display: block;
+  }
+
+  .header__nav-list li {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .header__nav-link {
+    font-size: 24px;
+    display: block;
+  }
+
+  .nav__bar {
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.5s ease 0s;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 120px;
+  }
+
+  .nav__body {
+    margin-right: 0;
+  }
+
+  .nav__icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 5;
+  }
+
+  .nav__icon::before,
+  .nav__icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #f9955e;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+
+  .nav__icon::before {
+    top: 0;
+  }
+
+  .nav__icon::after {
+    bottom: 0;
+  }
+
+  .nav__icon.active span {
+    transform: scale(0);
+  }
+
+  .nav__icon.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .nav__icon.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .user-profile {
+    margin-left: 0;
+  }
+
+  .user-profile__icon {
+    font-size: 20px;
+  }
+
+  .user-link__text {
+    font-size: 24px;
+  }
+
+  .banner__content {
+    padding-left: 100px;
+  }
+
+  .banner__info {
+    padding: 30px 0;
+  }
+
+  .banner__title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .banner__title_big {
+    font-size: 58px;
+    margin-bottom: 20px;
+  }
+
+  .banner__text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .banner__img {
+    width: 30%;
+  }
+
+  .btn {
+    width: 110px;
+    font-size: 14px;
+  }
+
+  .about__content {
+    justify-content: center;
+  }
+
+  .about__item {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .about__item-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .about__item-title {
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .discount-system {
+    background-image: none;
+    background-color: #dceaec;
+  }
+
+  .discount-system__content {
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/Paw_.png) bottom right no-repeat;
+  }
+
+  .discount-system__item-title {
+    font-size: 16px;
+  }
+
+  .discount-system__btn {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .blog__content {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .blog__img {
+    width: 40%;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+
+  .blog__img__posts {
+    width: 95%;
+  }
+
+  .about-food__text {
+    max-width: 200px;
+  }
+
+  .store__nav-body {
+    margin-bottom: 60px;
+  }
+
+  .store__nav-link {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .store__img {
+    height: 135px;
+  }
+
+  .store-section__title::before,
+  .store-section__title::after {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 2px;
+  }
+
+  .store-section__title::before,
+  .store-section__title::after {
+    display: none;
+  }
+
+  .about-vitamins {
+    padding-top: 60px;
+  }
+
+  .about-vitamins__content {
+    justify-content: center;
+    align-items: start;
+    flex-direction: column-reverse;
+  }
+
+  .about-vitamins__img {
+    width: 40%;
+  }
+
+  .about-vitamins__info {
+    width: 70%;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .about-vitamins__text {
+    margin-bottom: 10px;
+  }
+
+  .about-bowls__text {
+    max-width: 495px;
+  }
+
+  .registration__btn {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 11px 0;
+  }
+
+  .registration__social-link {
+    width: 50px;
+    height: 30px;
+  }
+
+  .registration__social-icon {
+    font-size: 16px;
+  }
+
+  .registration__info-title {
+    font-size: 16px;
+  }
+
+  .registration__info-text::before {
+    width: 13px;
+    height: 13px;
+  }
+
+  .registration__info-text {
+    font-size: 14px;
+  }
+
+  .registration-form__text {
+    font-size: 14px;
+    margin: 0 auto 20px;
+  }
+
+  .footer__content {
+    padding: 20px 0;
+  }
+
+  .footer__text {
+    max-width: 150px;
+  }
+
+  .social__link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social__icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .section {
+    padding: 35px 0;
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+
+  .header {
+    padding: 10px 50px;
+  }
+
+  .header__logo {
+    width: 35%;
+  }
+
+  .banner__content {
+    padding-left: 50px;
+  }
+
+  .banner__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .banner__title_big {
+    font-size: 40px;
+  }
+
+  .banner__text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .about__item-icon {
+    margin: 0 auto 15px;
+  }
+
+  .discount-system__content {
+    background: url(../img/Paw_.png) center right no-repeat;
+  }
+
+  .discount-system__text {
+    margin-bottom: 30px;
+  }
+
+  .discount-system__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .discount-system__item {
+    margin-bottom: 10px;
+  }
+
+  .discount-system__btn {
+    width: 160px;
+  }
+
+  .blog__img {
+    display: none;
+  }
+
+  .blog__img__posts {
+    width: 100%;
+  }
+
+  .blog .post {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .blog .post__img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .blog .post__info {
+    width: 100%;
+  }
+
+  .blog .post__title {
+    text-align: center;
+  }
+
+  .about-food {
+    background: url(../img/Paw_.png) right bottom no-repeat;
+    background-color: #dceaec;
+    text-align: center;
+  }
+
+  .about-food__text {
+    max-width: 95%;
+  }
+
+  .about-food__buttons {
+    width: 140px;
+    margin: 0 auto;
+  }
+
+  .store__nav-body {
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .store__nav-link {
+    padding: 10px 10px;
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  .store__item {
+    width: 46%;
+    margin-bottom: 20px;
+  }
+
+  .store__bottom-item {
+    margin-top: 0;
+  }
+
+  .store__img-container {
+    margin-bottom: 15px;
+  }
+
+  .store__item-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .store-section__title {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  .store-section__text {
+    margin-bottom: 35px;
+  }
+
+  .store-section__content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-vitamins {
+    padding-top: 40px;
+  }
+
+  .about-vitamins__img {
+    display: none;
+  }
+
+  .about-vitamins__info {
+    width: 75%;
+  }
+
+  .about-toys__content {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-toys__img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .about-toys__info {
+    width: 90%;
+  }
+
+  .about-toys__text {
+    margin-bottom: 10px;
+  }
+
+  .registration__content {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .registration__form {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+
+  .registration__social {
+    max-width: 230px;
+  }
+
+  .registration__info {
+    width: 90%;
+    text-align: center;
+  }
+
+  .registration__img {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .footer__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__item {
+    width: 85%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
+  .footer__text {
+    width: 250px;
+  }
+
+  .footer__img {
+    width: 60%;
+    margin: 7px 0;
+  }
+
+  .footer__info {
+    margin-bottom: 10px;
+  }
+
+  .worktime-text {
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .socials {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .social__icon {
+    font-size: 16px;
+  }
+
+  .copyright__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 120px) {
+  .store__img {
+    height: 135px;
+  }
+}
