@@ -1254,8 +1254,13 @@ body {
     margin-bottom: 10px;
   }
 
+  .about-bowls {
+    background: url(../img/Slice_1.png) center/contain no-repeat #dbe9eb;
+  }
+
   .about-bowls__text {
     max-width: 495px;
+    margin: 0 auto 10px;
   }
 
   .registration__btn {
