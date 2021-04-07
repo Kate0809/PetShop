@@ -709,6 +709,9 @@ body {
 
 .registration__form {
   width: 30%;
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #cecec7;
 }
 
 .registration__btn {
@@ -741,7 +744,7 @@ body {
   justify-content: center;
   width: 60px;
   height: 40px;
-  background-color: #fff;
+  background-color: white;
   border: 2px solid #a8a8a3;
   border-radius: 10px;
 }
@@ -1275,6 +1278,10 @@ body {
     margin: 0 auto 10px;
   }
 
+  .registration__form {
+    padding: 40px 10px;
+  }
+
   .registration__btn {
     font-size: 14px;
     margin-bottom: 20px;
@@ -1519,6 +1526,7 @@ body {
   .registration__form {
     width: 90%;
     margin-bottom: 25px;
+    padding: 40px 15px;
   }
 
   .registration__social {
@@ -1532,7 +1540,7 @@ body {
 
   .registration__img-container {
     width: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .footer__content {
