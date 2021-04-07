@@ -244,7 +244,7 @@ body {
 .popup {
   position: absolute;
   background: url(../img/Paw_.png) center top no-repeat #dbe9eb;
-  width: 380px;
+  width: 400px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -306,6 +306,7 @@ body {
 .form__text {
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .registration-link {
@@ -773,7 +774,7 @@ body {
   width: 15px;
   height: 15px;
   margin-right: 7px;
-  background: url(/img/icon.png) center/contain no-repeat;
+  background: url(../img/icon.png) center/contain no-repeat;
 }
 
 .registration__img {
